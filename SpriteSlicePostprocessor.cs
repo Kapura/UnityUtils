@@ -42,10 +42,7 @@ public class SpriteSlicePostprocessor : AssetPostprocessor {
             };
         }
         importer.spritesheet = spritesheet;
-
         importer.spriteImportMode = SpriteImportMode.Multiple;
-        importer.spritePixelsPerUnit = size;
-        importer.filterMode = FilterMode.Point;
 
         importer.SaveAndReimport();
     }
